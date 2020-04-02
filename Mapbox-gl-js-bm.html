@@ -9,10 +9,20 @@
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.css' rel='stylesheet' />
     <!-- Add styling info for the map -->
     <style>
-         #mapId {
-      height: 400px;
-      width: 800px;
-    }
+    #mapId {
+            position: absolute;
+            top: 200px;
+            bottom: 100px;
+            left: 5%;
+            width: 90%;
+            z-index: 0;
+        }
+        #pID {
+            position: absolute;
+            top: 85%;
+            left: 5%;
+            z-index: 1;
+        }
     </style>
     <!-- Adding styling info for page layout by reading in a CSS file -->
     <link rel="stylesheet" href="styles.css">
@@ -35,7 +45,7 @@
 
     <script>
     // Set your Mapbox access token
-    mapboxgl.accessToken = "";
+    mapboxgl.accessToken = "pk.eyJ1IjoicWl6aGFuZzk3MDMzMSIsImEiOiJjazhleW54MWcwMWZhM2Zyd3M2dDZmdG1zIn0.V0szOrPy8dZ3OiNRXgbwuQ";
 
     /* The map variable stores a new mapbox gl map.
     * map's center set to [-122.467, 37.798] with zoom 13. 
@@ -46,7 +56,7 @@
     var map = new mapboxgl.Map({
     center: [-122.467, 37.798],
     zoom: 13,
-    style: "",
+    style: "mapbox://styles/qizhang970331/ck8j4ler70pij1iqn93hvvrv8",
     container: "mapId"
     });
 
