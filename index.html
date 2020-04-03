@@ -42,11 +42,11 @@
      * Use Leaflet's tileLayer method to create a new tile layer, then add it to the map 
      ** Reference: https://leafletjs.com/reference-1.6.0.html#tilelayer
      */
-      L.tileLayer(https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png', {
-	attribution: '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; 
-	<a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; 
-	<a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
+	L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}{r}.png', {
+	maxZoom: 20,
+	attribution: '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
 	}).addTo(map);
+     
     /* Try changing out the tile source for something else. Hint: you can find 
      * lots of tile sources here: https://leaflet-extras.github.io/leaflet-providers/preview/ 
      */
